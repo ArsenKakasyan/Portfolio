@@ -1,0 +1,41 @@
+.sl{
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sl-texts{
+    width: 30%;
+}
+
+.sl-title{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.pl-desc{
+    margin: 20px 0px;
+}
+
+.sl-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:480px) {
+    .sl{
+        padding: 10px;
+    }
+
+    .sl-texts{
+        width: 100%;
+    }
+
+    .sl-desc{
+        display: none;
+    }
+}
