@@ -1,6 +1,6 @@
 # Portfolio application built with React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was built using React, Nodejs and hosted on gh-pages.
 
 ### https://arsenkakasyan.github.io/
 
