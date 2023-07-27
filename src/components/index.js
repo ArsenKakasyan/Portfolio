@@ -5,8 +5,6 @@ import Service from "./service/Service";
 import ServiceList from "./ServiceList/ServiceList";
 import Contact from "./contact/Contact";
 
-
-
 export {
   Navbar,
   Intro,
