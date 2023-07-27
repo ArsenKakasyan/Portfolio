@@ -1,7 +1,7 @@
-# Portfolio application built with React
+# Portfolio application built with React and Vite
 
-This project was built using React, Nodejs and hosted on gh-pages.
+This project was built using Vite, React, Nodejs and hosted on Vercel.
 
-### https://arsenkakasyan.github.io/
+### https://portfolio-five-nu-51.vercel.app/
 
 
