@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
 import "./serviceList.css"
-import Service from "../service/Service.jsx"
+import Service from "../service/Service"
 import { services } from '../../data'
 
 import { LanguageContext } from "../../LanguageContext";
 
-export const ServiceList = () => {
+const ServiceList = () => {
 
   const { language } = useContext(LanguageContext);
   
@@ -31,3 +31,5 @@ export const ServiceList = () => {
     </div>
   )
 }
+
+export default ServiceList;
