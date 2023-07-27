@@ -33,9 +33,9 @@ const Navbar = () => {
           <a href="https://github.com/ArsenKakasyan" className="navbar__link" target="_blank">
             <img src={github} alt="GitHub" className="navbar__github-icon" />
           </a>
-
+          
           <a
-            href="https://drive.google.com/uc?export=download&id=1XdO7j3FFthz5-Ozjv_Ri5YvdTpi3rOzE"
+            href="https://drive.google.com/uc?export=download&id=1i4b3PKjTtWuoHeSGnINqm47H3JsNgKz5"
             download
             className="navbar__link"
           >
