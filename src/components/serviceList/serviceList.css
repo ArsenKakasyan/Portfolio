@@ -7,12 +7,14 @@
 }
 
 .sl-texts{
-    width: 30%;
+    width: 40%;
 }
 
 .sl-title{
-    font-size: 50px;
-    font-weight: 600;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 .pl-desc{
@@ -24,9 +26,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 2rem;
 }
 
-@media screen and (max-width:480px) {
+.sl-desc{
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width:520px) {
     .sl{
         padding: 10px;
     }

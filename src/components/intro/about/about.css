@@ -17,13 +17,6 @@
     flex:1
 }
 
-.a-card.bg{
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    background-color: #333;
-}
-
 .a-card{
     width: 60%;
     height: 70vh;
@@ -39,20 +32,22 @@
 }
 
 .a-award-img{
-    width: 120px;
-    height: 120px;
+    width: 20%;
+    height: 20%;
     border-radius: 20px;
+    object-fit: contain;
 }
 
 .a-title{
-    font-weight: 400;
-}
-
-.a-sub{
-    margin: 20px 0px;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
 }
 
 .a-desc{
+    margin: 20px 0px;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
     font-weight: 300;
     width: 65%;
 }
@@ -70,11 +65,17 @@
 
 .a-award-title{
     font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
     color: #555;
     margin-bottom: 10px;
 }
 
-@media screen and (max-width:480px) {
+.a-award-desc {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+}
+@media screen and (max-width:520px) {
     .a{
         flex-direction: column;
         text-align: center;
@@ -101,6 +102,7 @@
         align-items: center;
         justify-content: center;
         text-align: center;
+        
         
     }
 }

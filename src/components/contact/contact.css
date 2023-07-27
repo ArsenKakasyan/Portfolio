@@ -1,12 +1,12 @@
 .c{
-    height: 100vh;
+    height: 100%;
     position: relative;
 }
 
 .c-bg{
     width: 20px;
     height: 100%;
-    background-color: rgba(14, 18, 255, 0.733);
+    background-color: rgba(43, 177, 234, 0.99);
     position: absolute;
 }
 
@@ -28,7 +28,9 @@
 }
 
 .c-title{
-    font-size: 60px;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
     width: 60%;
 }
 
@@ -37,17 +39,20 @@
     align-items: center;
     margin: 50px 0px;
     font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
 }
 
 .c-icon{
     width: 30px;
     height: 30px;
     margin-right: 20px;
-    
 }
 
 .c-desc{
-    font-weight: 200;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 form{
@@ -74,10 +79,13 @@ textarea{
 button{
     border: none;
     padding: 15px;
-    background-color: rgba(14, 18, 255, 0.733);
+    background-color: rgba(43, 177, 234, 0.99);
     color:white;
     font-weight: 500;
     margin-right: 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    width: 100%;
 }
 
 @media screen and (max-width: 480px) {
