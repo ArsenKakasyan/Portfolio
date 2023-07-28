@@ -35,7 +35,7 @@ const Navbar = () => {
           </a>
           
           <a
-            href="https://drive.google.com/uc?export=download&id=1i4b3PKjTtWuoHeSGnINqm47H3JsNgKz5"
+            href="https://drive.google.com/uc?export=download&id=1t84GAFylU8YgW-CTfmRPIz8sVTn0CE0E"
             download
             className="navbar__link"
           >
