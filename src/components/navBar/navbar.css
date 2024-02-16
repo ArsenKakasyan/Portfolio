@@ -89,10 +89,3 @@
     margin-right: 2rem;
   }
 }
-
-@media (prefers-color-scheme: dark) {
-  .navbar {
-    color: #ffffff;
-    background-color: rgba(43, 177, 234, 0.99);
-  }
-}
