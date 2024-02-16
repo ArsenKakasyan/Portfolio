@@ -36,9 +36,7 @@ const Contact = () => {
       <div className="c-wrapper">
         <div className="c-left">
           <h1 className="c-title">
-          {language === "RU" 
-              ? "Контакты" 
-              : "Contacts"}
+            {language === "RU" ? "Контакты" : "Contacts"}
           </h1>
           <div className="c-info">
             <div className="c-info-item">
@@ -51,16 +49,14 @@ const Contact = () => {
             </div>
             <div className="c-info-item">
               <img src={geo} alt="" className="c-icon" />
-              {language === "RU" 
-              ? "Россия" 
-              : "Russia"}
+              {language === "RU" ? "Россия" : "Russia"}
             </div>
           </div>
         </div>
         <div className="c-right">
           <p className="c-desc">
-          {language === "RU" 
-              ? "Расскажите о своем проекте" 
+            {language === "RU"
+              ? "Расскажите о своем проекте"
               : "Tell me about your project"}
           </p>
           <form ref={formRef} onSubmit={handleSubmit}>
@@ -68,10 +64,7 @@ const Contact = () => {
             <input type="text" placeholder="Subject" name="user_subject" />
             <input type="text" placeholder="Email" name="user_email" />
             <textarea row="5" placeholder="Message" name="message" />
-            <button>{language === "RU" 
-              ? "Отправить" 
-              : "Submit"}
-              </button>
+            <button>{language === "RU" ? "Отправить" : "Submit"}</button>
             {done && "Thank you..."}
           </form>
         </div>

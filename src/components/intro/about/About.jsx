@@ -1,54 +1,54 @@
 import React, { useContext } from "react";
-import "./about.css"
-import { gif, award } from "../../../assets"
+import "./about.css";
+import { g } from "../../../assets";
+import { awards } from "../../../data";
+import { Carousel } from "react-responsive-carousel";
 import { LanguageContext } from "../../../LanguageContext";
-
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
 const About = () => {
-    const { language } = useContext(LanguageContext);
-
+  const { language } = useContext(LanguageContext);
 
   return (
-    <div className='a'>
-        <div className="a-left">
-
-            <div className="a-card">
-                <img src={gif}
-                alt="Picture"
-                draggable='false' 
-                className="a-img" />
-            </div>
+    <div className="a">
+      <div className="a-left">
+        <div className="a-card">
+          <Carousel
+            swipeable={true}
+            width="100%"
+            centerMode={true}
+            emulateTouch={true}
+            showArrows={false}
+            infiniteLoop={true}
+            autoPlay={true}
+            showThumbs={false}
+          >
+            {awards.map((item) => (
+              <div key={item.id}>
+                <img
+                  src={item.imageUrl}
+                  alt="Award"
+                  draggable="false"
+                  loading="lazy"
+                  style={{ userSelect: "none" }}
+                  className="a-img"
+                />
+              </div>
+            ))}
+          </Carousel>
         </div>
-        <div className="a-right">
-            <h1 className="a-title">
-                {language === "RU" 
-                ? "Обо мне" 
-                : "About"}
-            </h1>
+      </div>
+      <div className="a-right">
+        <h1 className="a-title">{language === "RU" ? "Обо мне" : "About"}</h1>
 
-            <p className="a-desc">
-                {language === "RU" 
-                ? "3 года опыта разработки программного обеспечения. Принимал участие в акселераторе SberStudent 2023 в качестве тимлида и 3-х научных конференциях в университете. В 2024 году окончил специальность «Информационные системы и технологии»." 
-                : "3 years of software development experience. Took part in the SberStudent 2023 accelerator as a team leader and 3 scientific conferences at the university. Graduated with a degree in Information Systems and Technologies in 2024."}
-            </p>
-            <div className="a-award">
-                <img src={award} alt="Award" draggable='false' className="a-award-img" />
-                <div className="a-award-texts">
-                    <h4 className="a-award-title">
-                        {language === "RU" 
-                        ? "Диплом за участие в научной конференции" 
-                        : "Diploma for attending science conference"}
-
-                    </h4>
-                    <p className="a-award-desc">
-                        {language === "RU" 
-                        ? "Научная конференция 'СеверГеоЭкоТех' / современные информационные технологии" 
-                        : "Scientific conference 'NorthGeoEcoTech' / modern information technologies section"}
-                    </p>
-                </div>
-            </div>
-        </div>
+        <p className="a-desc">
+          {language === "RU"
+            ? "3 года опыта разработки программного обеспечения. Принимал участие в различных мероприятиях. В 2024 году окончил специальность «Информационные системы и технологии»."
+            : "3 years of software development experience. Participated in various events. Graduated with a degree in Information Systems and Technologies in 2024."}
+        </p>
+        <div className="a-award"></div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

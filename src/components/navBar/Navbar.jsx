@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 
-import { langswitch, github, linkedin, cv } from "../../assets";
+import { langswitch, github, linkedin, cv, telegram } from "../../assets";
 import "./navbar.css";
 
 import { LanguageContext } from "../../LanguageContext";
@@ -21,25 +21,53 @@ const Navbar = () => {
           {language === "RU" ? "Портфолио" : "Portfolio"}&nbsp;
           <span className="navbar__subtext">
             |&nbsp;
-            {language === "RU" ? "Python/NodeJS" : "Python/NodeJS"}
+            {language === "RU" ? "Разработчика" : "Developer"}
           </span>
         </p>
 
         <div className="navbar__icons">
-          <a href="https://www.linkedin.com/in/archeeee" className="navbar__link" target="_blank">
-            <img src={linkedin} alt="Linkedin" className="navbar__linkedin-icon" />
+          <a
+            href="https://t.me/soitends"
+            className="navbar__link"
+            target="_blank"
+          >
+            <img
+              src={telegram}
+              alt="Telegram"
+              className="navbar__telegram-icon"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/archeeee"
+            className="navbar__link"
+            target="_blank"
+          >
+            <img
+              src={linkedin}
+              alt="Linkedin"
+              className="navbar__linkedin-icon"
+            />
           </a>
 
-          <a href="https://github.com/ArsenKakasyan" className="navbar__link" target="_blank">
+          <a
+            href="https://github.com/ArsenKakasyan"
+            className="navbar__link"
+            target="_blank"
+          >
             <img src={github} alt="GitHub" className="navbar__github-icon" />
           </a>
-          
+
           <a
             href="https://drive.google.com/uc?export=download&id=1t84GAFylU8YgW-CTfmRPIz8sVTn0CE0E"
             download
             className="navbar__link"
           >
-            <img src={cv} alt="Curriculum Vitae" className="navbar__cv-icon" target="_blank"/>
+            <img
+              src={cv}
+              alt="Curriculum Vitae"
+              className="navbar__cv-icon"
+              target="_blank"
+            />
           </a>
 
           <button

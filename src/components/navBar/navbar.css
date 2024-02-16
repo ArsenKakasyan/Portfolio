@@ -29,7 +29,7 @@
   font-weight: normal;
 }
 
-.navbar__icons{
+.navbar__icons {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -38,6 +38,7 @@
 .navbar__github-icon,
 .navbar__linkedin-icon,
 .navbar__cv-icon,
+.navbar__telegram-icon,
 .navbar__language-icon {
   width: 2.5rem;
   height: 2.5rem;
@@ -65,7 +66,7 @@
     display: none;
   }
 
-  .navbar__icons{
+  .navbar__icons {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -74,6 +75,7 @@
   .navbar__github-icon,
   .navbar__linkedin-icon,
   .navbar__cv-icon,
+  .navbar__telegram-icon,
   .navbar__language-icon {
     width: 2.5rem;
     height: 2.5rem;
@@ -82,16 +84,11 @@
     cursor: pointer;
   }
 
-  .navbar__linkedin-icon{
-    margin-left: 3rem;
-  }
-
-  .navbar__language{
+  .navbar__language {
     margin-bottom: 1.1rem;
     margin-right: 2rem;
   }
 }
-
 
 @media (prefers-color-scheme: dark) {
   .navbar {
