@@ -1,4 +1,5 @@
 import React from "react";
+import { Analytics } from "@vercel/analytics/react";
 import { LanguageProvider } from "./LanguageContext";
 import { Navbar, Intro, About, ServiceList, Contact } from "./components";
 
@@ -10,6 +11,7 @@ const App = () => {
         <Intro />
         <About />
         <ServiceList />
+        <Analytics />
       </div>
     </LanguageProvider>
   );
